@@ -13,6 +13,7 @@
 		060295F7273C077C00241D1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 060295F5273C077C00241D1E /* Main.storyboard */; };
 		060295F9273C077E00241D1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 060295F8273C077E00241D1E /* Assets.xcassets */; };
 		060295FC273C077E00241D1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 060295FA273C077E00241D1E /* LaunchScreen.storyboard */; };
+		06029609273C164F00241D1E /* ViewController+alertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06029608273C164F00241D1E /* ViewController+alertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		060295F8273C077E00241D1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		060295FB273C077E00241D1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		060295FD273C077E00241D1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06029608273C164F00241D1E /* ViewController+alertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+alertController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		060295EE273C077C00241D1E /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				060295EF273C077C00241D1E /* AppDelegate.swift */,
-				060295F1273C077C00241D1E /* SceneDelegate.swift */,
-				060295F3273C077C00241D1E /* ViewController.swift */,
-				060295F5273C077C00241D1E /* Main.storyboard */,
-				060295F8273C077E00241D1E /* Assets.xcassets */,
-				060295FA273C077E00241D1E /* LaunchScreen.storyboard */,
-				060295FD273C077E00241D1E /* Info.plist */,
+				06029607273C161300241D1E /* Extensions */,
+				06029606273C07E200241D1E /* Supporting files */,
+				06029605273C07DB00241D1E /* Controller */,
+				06029604273C07D400241D1E /* View */,
+				06029603273C07CC00241D1E /* Model */,
 			);
 			path = WeatherApp;
+			sourceTree = "<group>";
+		};
+		06029603273C07CC00241D1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06029604273C07D400241D1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				060295F5273C077C00241D1E /* Main.storyboard */,
+				060295FA273C077E00241D1E /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		06029605273C07DB00241D1E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				060295F3273C077C00241D1E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		06029606273C07E200241D1E /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				060295EF273C077C00241D1E /* AppDelegate.swift */,
+				060295F1273C077C00241D1E /* SceneDelegate.swift */,
+				060295F8273C077E00241D1E /* Assets.xcassets */,
+				060295FD273C077E00241D1E /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		06029607273C161300241D1E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				06029608273C164F00241D1E /* ViewController+alertController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				060295F4273C077C00241D1E /* ViewController.swift in Sources */,
+				06029609273C164F00241D1E /* ViewController+alertController.swift in Sources */,
 				060295F0273C077C00241D1E /* AppDelegate.swift in Sources */,
 				060295F2273C077C00241D1E /* SceneDelegate.swift in Sources */,
 			);
@@ -291,7 +335,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R8Z5KNL8KD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_FILE = "WeatherApp/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +363,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R8Z5KNL8KD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_FILE = "WeatherApp/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
